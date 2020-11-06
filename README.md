@@ -1,3 +1,3 @@
 # nrsv-json
 
-Delivering the NRSV Bible translation to JSON format.
+📖 Delivering the NRSV Bible translation to JSON format.
