@@ -13,16 +13,16 @@ const defaultOptions = {
 const paths = {
   xml: path.resolve(__dirname, '../data/nrsv.xml'),
   build: path.resolve(__dirname, '../../build'),
-  dist: path.resolve(__dirname, '../../dist')
+  dist: path.resolve(__dirname, '../..')
 };
 
 const { parseStringPromise } = new xml2js.Parser({
   explicitRoot: false
 });
 
-async function clean (dir) {
-  await removeDir(dir);
-  await makeDir(dir);
+async function cleanBuild () {
+  await removeDir(paths.build);
+  return makeDir(paths.build);
 }
 
 async function build (options = {}) {
@@ -37,7 +37,7 @@ async function build (options = {}) {
     const data = structureData(json);
     const file = JSON.stringify(data, null, space);
 
-    await clean(dir);
+    await cleanBuild();
 
     writeFile(jsonPath, file);
   } catch (error) {
