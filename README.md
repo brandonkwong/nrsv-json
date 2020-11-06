@@ -10,12 +10,17 @@ Download [nrsv.json](nrsv.json) or fork this project to get started on sharing t
 yarn build
 ```
 
-### Build Args
+### Build Options
 
-When editing JSON [structure](src/lib/structure.js), the `--indent` arg can be used to adjust spacing (default is `4`) for desired readability.
+When editing JSON [structure](src/lib/structure.js), the `--indent` option can be used to adjust spacing (default is `4`) for desired level of readability.
 
 ```
 yarn build --indent 2
+```
+
+Alternatively, [nrsv-map.json](nrsv-map.json) may also be built for easier lookup purposes (i.e.: `nrsv.books.rom.chapters[14].verses[4].text`).
+```
+yarn build --map
 ```
 
 [nrsv.json](nrsv.json) is stringified for distribution.

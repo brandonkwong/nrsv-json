@@ -7,6 +7,7 @@ const { argv } = yargs(hideBin(process.argv));
 
 const options = {
   indent: argv.indent || defaultOptions.indent,
+  map: argv.map || defaultOptions.map,
   dist: argv.dist || defaultOptions.dist
 };
 
