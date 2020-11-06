@@ -47,4 +47,5 @@ async function build(options = {}) {
 
 module.exports = {
   build,
+  defaultOptions,
 };
