@@ -1,0 +1,42 @@
+{
+  "name": "nrsv-json",
+  "version": "1.0.0",
+  "description": "Delivering the NRSV Bible translation to JSON format.",
+  "license": "MIT",
+  "author": {
+    "name": "Brandon Kwong",
+    "email": "brandon@brandonkwong.com",
+    "url": "https://brandonkwong.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src index.js"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.23",
+    "yargs": "^16.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ]
+    }
+  }
+}
