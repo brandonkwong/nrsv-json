@@ -2,11 +2,15 @@
 
 📖 Delivering the NRSV Bible translation to JSON format.
 
-## Get Started
+## Getting Started
 
-Download [nrsv.json](nrsv.json) or fork this project to get started on sharing the gosepl.
+Download [nrsv.json](nrsv.json) or fork this project to get started on sharing the gosepl. Just `yarn install` and run the following to build locally:
 
-## Build Args
+```
+yarn build
+```
+
+### Build Args
 
 When editing JSON [structure](src/lib/structure.js), the `--indent` arg can be used to adjust spacing (default is `4`) for desired readability.
 
