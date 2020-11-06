@@ -14,8 +14,8 @@ const defaultOptions = {
 
 const paths = {
   xml: path.resolve(__dirname, '../data/nrsv.xml'),
-  build: path.resolve(__dirname, '../../build'),
-  dist: path.resolve(__dirname, '../..')
+  build: path.resolve(__dirname, '../build'),
+  dist: path.resolve(__dirname, '../dist')
 };
 
 const { parseStringPromise } = new xml2js.Parser({

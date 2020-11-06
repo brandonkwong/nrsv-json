@@ -1,7 +1,7 @@
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
-const { build, defaultOptions } = require('./src/scripts/build');
+const { build, defaultOptions } = require('./scripts/build');
 
 const { argv } = yargs(hideBin(process.argv));
 
