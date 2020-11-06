@@ -7,25 +7,25 @@ const { makeDir, removeDir, readFile, writeFile } = require('../utils/file');
 
 const defaultOptions = {
   indent: 4,
-  dist: false,
+  dist: false
 };
 
 const paths = {
   xml: path.resolve(__dirname, '../data/nrsv.xml'),
   build: path.resolve(__dirname, '../../build'),
-  dist: path.resolve(__dirname, '../../dist'),
+  dist: path.resolve(__dirname, '../../dist')
 };
 
 const { parseStringPromise } = new xml2js.Parser({
-  explicitRoot: false,
+  explicitRoot: false
 });
 
-async function clean(dir) {
+async function clean (dir) {
   await removeDir(dir);
   await makeDir(dir);
 }
 
-async function build(options = {}) {
+async function build (options = {}) {
   const { indent, dist } = { ...defaultOptions, ...options };
   const dir = dist ? paths.dist : paths.build;
   const jsonPath = `${dir}/nrsv.json`;
@@ -47,5 +47,5 @@ async function build(options = {}) {
 
 module.exports = {
   build,
-  defaultOptions,
+  defaultOptions
 };

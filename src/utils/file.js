@@ -40,5 +40,5 @@ module.exports = {
   makeDir,
   removeDir,
   readFile,
-  writeFile,
+  writeFile
 };

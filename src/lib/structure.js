@@ -3,54 +3,54 @@ const { sanitizeText } = require('../utils/string');
 
 const { BOOKS } = require('./constants');
 
-function structureBible(bible) {
+function structureBible (bible) {
   const data = {
     translation: bible.$.translation.toUpperCase(),
-    books: bible.book,
+    books: bible.book
   };
 
   return data;
 }
 
-function structureBook(book, index) {
+function structureBook (book, index) {
   const { name, abbreviation } = BOOKS[index];
   const data = {
     id: generateId(name),
     name,
     abbreviation,
-    chapters: book.chapter,
+    chapters: book.chapter
   };
 
   return data;
 }
 
-function structureChapter(chapter, book) {
+function structureChapter (chapter, book) {
   const number = Number(chapter.$.name);
   const name = `${book.name} ${number}`;
   const data = {
     id: generateId(name),
     name,
     number,
-    verses: chapter.verse,
+    verses: chapter.verse
   };
 
   return data;
 }
 
-function structureVerse(verse, chapter) {
+function structureVerse (verse, chapter) {
   const number = Number(verse.$.name);
   const name = `${chapter.name}:${number}`;
   const data = {
     id: generateId(name),
     name,
     number,
-    text: sanitizeText(verse._),
+    text: sanitizeText(verse._)
   };
 
   return data;
 }
 
-function structureData(bible) {
+function structureData (bible) {
   const data = structureBible(bible);
 
   for (let i = 0; i < data.books.length; ++i) {
@@ -72,5 +72,5 @@ function structureData(bible) {
 }
 
 module.exports = {
-  structureData,
+  structureData
 };

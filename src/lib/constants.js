@@ -1,270 +1,270 @@
 const BOOKS = [
   {
     name: 'Genesis',
-    abbreviation: 'Gen',
+    abbreviation: 'Gen'
   },
   {
     name: 'Exodus',
-    abbreviation: 'Exod',
+    abbreviation: 'Exod'
   },
   {
     name: 'Leviticus',
-    abbreviation: 'Lev',
+    abbreviation: 'Lev'
   },
   {
     name: 'Numbers',
-    abbreviation: 'Num',
+    abbreviation: 'Num'
   },
   {
     name: 'Deuteronomy',
-    abbreviation: 'Deut',
+    abbreviation: 'Deut'
   },
   {
     name: 'Joshua',
-    abbreviation: 'Josh',
+    abbreviation: 'Josh'
   },
   {
     name: 'Judges',
-    abbreviation: 'Judg',
+    abbreviation: 'Judg'
   },
   {
     name: 'Ruth',
-    abbreviation: 'Ruth',
+    abbreviation: 'Ruth'
   },
   {
     name: '1 Samuel',
-    abbreviation: '1 Sam',
+    abbreviation: '1 Sam'
   },
   {
     name: '2 Samuel',
-    abbreviation: '2 Sam',
+    abbreviation: '2 Sam'
   },
   {
     name: '1 Kings',
-    abbreviation: '1 Kgs',
+    abbreviation: '1 Kgs'
   },
   {
     name: '2 Kings',
-    abbreviation: '2 Kgs',
+    abbreviation: '2 Kgs'
   },
   {
     name: '1 Chronicles',
-    abbreviation: '1 Chr',
+    abbreviation: '1 Chr'
   },
   {
     name: '2 Chronicles',
-    abbreviation: '2 Chr',
+    abbreviation: '2 Chr'
   },
   {
     name: 'Ezra',
-    abbreviation: 'Ezra',
+    abbreviation: 'Ezra'
   },
   {
     name: 'Nehemiah',
-    abbreviation: 'Neh',
+    abbreviation: 'Neh'
   },
   {
     name: 'Esther',
-    abbreviation: 'Esth',
+    abbreviation: 'Esth'
   },
   {
     name: 'Job',
-    abbreviation: 'Job',
+    abbreviation: 'Job'
   },
   {
     name: 'Psalms',
-    abbreviation: 'Ps',
+    abbreviation: 'Ps'
   },
   {
     name: 'Proverbs',
-    abbreviation: 'Prov',
+    abbreviation: 'Prov'
   },
   {
     name: 'Ecclesiastes',
-    abbreviation: 'Eccl',
+    abbreviation: 'Eccl'
   },
   {
     name: 'Song of Solomon',
-    abbreviation: 'Song',
+    abbreviation: 'Song'
   },
   {
     name: 'Isaiah',
-    abbreviation: 'Isa',
+    abbreviation: 'Isa'
   },
   {
     name: 'Jeremiah',
-    abbreviation: 'Jer',
+    abbreviation: 'Jer'
   },
   {
     name: 'Lamentations',
-    abbreviation: 'Lam',
+    abbreviation: 'Lam'
   },
   {
     name: 'Ezekiel',
-    abbreviation: 'Ezek',
+    abbreviation: 'Ezek'
   },
   {
     name: 'Daniel',
-    abbreviation: 'Dan',
+    abbreviation: 'Dan'
   },
   {
     name: 'Hosea',
-    abbreviation: 'Hos',
+    abbreviation: 'Hos'
   },
   {
     name: 'Joel',
-    abbreviation: 'Joel',
+    abbreviation: 'Joel'
   },
   {
     name: 'Amos',
-    abbreviation: 'Amos',
+    abbreviation: 'Amos'
   },
   {
     name: 'Obadiah',
-    abbreviation: 'Obad',
+    abbreviation: 'Obad'
   },
   {
     name: 'Jonah',
-    abbreviation: 'Jonah',
+    abbreviation: 'Jonah'
   },
   {
     name: 'Micah',
-    abbreviation: 'Mic',
+    abbreviation: 'Mic'
   },
   {
     name: 'Nahum',
-    abbreviation: 'Nah',
+    abbreviation: 'Nah'
   },
   {
     name: 'Habakkuk',
-    abbreviation: 'Hab',
+    abbreviation: 'Hab'
   },
   {
     name: 'Zephaniah',
-    abbreviation: 'Zeph',
+    abbreviation: 'Zeph'
   },
   {
     name: 'Haggai',
-    abbreviation: 'Hag',
+    abbreviation: 'Hag'
   },
   {
     name: 'Zechariah',
-    abbreviation: 'Zech',
+    abbreviation: 'Zech'
   },
   {
     name: 'Malachi',
-    abbreviation: 'Mal',
+    abbreviation: 'Mal'
   },
   {
     name: 'Matthew',
-    abbreviation: 'Matt',
+    abbreviation: 'Matt'
   },
   {
     name: 'Mark',
-    abbreviation: 'Mark',
+    abbreviation: 'Mark'
   },
   {
     name: 'Luke',
-    abbreviation: 'Luke',
+    abbreviation: 'Luke'
   },
   {
     name: 'John',
-    abbreviation: 'John',
+    abbreviation: 'John'
   },
   {
     name: 'Acts of the Apostles',
-    abbreviation: 'Acts',
+    abbreviation: 'Acts'
   },
   {
     name: 'Romans',
-    abbreviation: 'Rom',
+    abbreviation: 'Rom'
   },
   {
     name: '1 Corinthians',
-    abbreviation: '1 Cor',
+    abbreviation: '1 Cor'
   },
   {
     name: '2 Corinthians',
-    abbreviation: '2 Cor',
+    abbreviation: '2 Cor'
   },
   {
     name: 'Galatians',
-    abbreviation: 'Gal',
+    abbreviation: 'Gal'
   },
   {
     name: 'Ephesians',
-    abbreviation: 'Eph',
+    abbreviation: 'Eph'
   },
   {
     name: 'Philippians',
-    abbreviation: 'Phil',
+    abbreviation: 'Phil'
   },
   {
     name: 'Colossians',
-    abbreviation: 'Col',
+    abbreviation: 'Col'
   },
   {
     name: '1 Thessalonians',
-    abbreviation: '1 Thess',
+    abbreviation: '1 Thess'
   },
   {
     name: '2 Thessalonians',
-    abbreviation: '2 Thess',
+    abbreviation: '2 Thess'
   },
   {
     name: '1 Timothy',
-    abbreviation: '1 Tim',
+    abbreviation: '1 Tim'
   },
   {
     name: '2 Timothy',
-    abbreviation: '2 Tim',
+    abbreviation: '2 Tim'
   },
   {
     name: 'Titus',
-    abbreviation: 'Titus',
+    abbreviation: 'Titus'
   },
   {
     name: 'Philemon',
-    abbreviation: 'Philm',
+    abbreviation: 'Philm'
   },
   {
     name: 'Hebrews',
-    abbreviation: 'Heb',
+    abbreviation: 'Heb'
   },
   {
     name: 'James',
-    abbreviation: 'Jas',
+    abbreviation: 'Jas'
   },
   {
     name: '1 Peter',
-    abbreviation: '1 Pet',
+    abbreviation: '1 Pet'
   },
   {
     name: '2 Peter',
-    abbreviation: '2 Pet',
+    abbreviation: '2 Pet'
   },
   {
     name: '1 John',
-    abbreviation: '1 John',
+    abbreviation: '1 John'
   },
   {
     name: '2 John',
-    abbreviation: '2 John',
+    abbreviation: '2 John'
   },
   {
     name: '3 John',
-    abbreviation: '3 John',
+    abbreviation: '3 John'
   },
   {
     name: 'Jude',
-    abbreviation: 'Jude',
+    abbreviation: 'Jude'
   },
   {
     name: 'Revelation',
-    abbreviation: 'Rev',
-  },
+    abbreviation: 'Rev'
+  }
 ];
 
 module.exports = {
-  BOOKS,
+  BOOKS
 };

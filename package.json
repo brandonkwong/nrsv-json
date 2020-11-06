@@ -11,32 +11,13 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src index.js"
+    "test": "semistandard"
   },
   "dependencies": {
     "xml2js": "^0.4.23",
     "yargs": "^16.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
-    "rules": {
-      "no-console": "off",
-      "no-plusplus": [
-        "error",
-        {
-          "allowForLoopAfterthoughts": true
-        }
-      ]
-    }
+    "semistandard": "^16.0.0"
   }
 }
