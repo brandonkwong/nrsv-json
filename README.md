@@ -1,10 +1,10 @@
 # nrsv.json
 
-📖 Delivering the NRSV Bible translation to JSON.
+📖 Delivering the NRSV Bible translation to JSON format.
 
 ## Getting Started
 
-Download [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gosepl in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
+Download [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gosepl, in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
 
 ```
 yarn build
