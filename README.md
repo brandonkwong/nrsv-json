@@ -12,7 +12,7 @@ yarn build
 
 ### Build Options
 
-An `--indent` option can be used to adjust spacing (default is `4`) for desired level of readability. This is particularly useful while editing the JSON [structure](src/lib/structure.js).
+An `--indent` option can be used to adjust spacing (default is `4`) for desired level of readability. This is particularly useful while editing the JSON [structure](lib/structure.js).
 
 ```
 yarn build --indent 2
