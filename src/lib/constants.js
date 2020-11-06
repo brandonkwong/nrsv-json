@@ -5,7 +5,7 @@ const BOOKS = [
   },
   {
     name: 'Exodus',
-    abbreviation: 'Ex',
+    abbreviation: 'Exod',
   },
   {
     name: 'Leviticus',
@@ -41,11 +41,11 @@ const BOOKS = [
   },
   {
     name: '1 Kings',
-    abbreviation: '1 Kings',
+    abbreviation: '1 Kgs',
   },
   {
     name: '2 Kings',
-    abbreviation: '2 Kings',
+    abbreviation: '2 Kgs',
   },
   {
     name: '1 Chronicles',
@@ -117,15 +117,15 @@ const BOOKS = [
   },
   {
     name: 'Amos',
-    abbreviation: 'Am',
+    abbreviation: 'Amos',
   },
   {
     name: 'Obadiah',
-    abbreviation: 'Ob',
+    abbreviation: 'Obad',
   },
   {
     name: 'Jonah',
-    abbreviation: 'Jon',
+    abbreviation: 'Jonah',
   },
   {
     name: 'Micah',
@@ -157,19 +157,19 @@ const BOOKS = [
   },
   {
     name: 'Matthew',
-    abbreviation: 'Mt',
+    abbreviation: 'Matt',
   },
   {
     name: 'Mark',
-    abbreviation: 'Mk',
+    abbreviation: 'Mark',
   },
   {
     name: 'Luke',
-    abbreviation: 'Lk',
+    abbreviation: 'Luke',
   },
   {
     name: 'John',
-    abbreviation: 'Jn',
+    abbreviation: 'John',
   },
   {
     name: 'Acts of the Apostles',
@@ -225,7 +225,7 @@ const BOOKS = [
   },
   {
     name: 'Philemon',
-    abbreviation: 'Philem',
+    abbreviation: 'Philm',
   },
   {
     name: 'Hebrews',
@@ -245,15 +245,15 @@ const BOOKS = [
   },
   {
     name: '1 John',
-    abbreviation: '1 Jn',
+    abbreviation: '1 John',
   },
   {
     name: '2 John',
-    abbreviation: '2 Jn',
+    abbreviation: '2 John',
   },
   {
-    name: 'John',
-    abbreviation: '3 Jn',
+    name: '3 John',
+    abbreviation: '3 John',
   },
   {
     name: 'Jude',

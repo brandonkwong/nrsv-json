@@ -13,7 +13,6 @@ function structureBible(bible) {
 }
 
 function structureBook(book, index) {
-  // TODO: Revisit abbreviations
   const { name, abbreviation } = BOOKS[index];
   const data = {
     id: generateId(name),
