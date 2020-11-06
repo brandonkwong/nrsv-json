@@ -25,7 +25,7 @@ is able to make them stand."
 yarn build --map
 ```
 
-For distribution, [nrsv.json](nrsv.json) is stringified with `0` spaces.
+For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces.
 
 ```
 yarn build --dist
