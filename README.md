@@ -18,7 +18,8 @@ An `--indent` option can be used to adjust spacing (default is `4`) for desired 
 yarn build --indent 2
 ```
 
-Alternatively, [nrsv-map.json](dist/nrsv-map.json) may also be built for easier lookup purposes. For example, `books.rom.chapters[14].verses[4].text` would return "".
+Alternatively, [nrsv-map.json](dist/nrsv-map.json) may also be built for easier lookup purposes. For example, `books.rom.chapters[14].verses[4].text` would return, "Who are you to pass judgment on servants of another? It is before their own lord that they stand or fall. And they will be upheld, for the Lord
+is able to make them stand."
 
 ```
 yarn build --map
