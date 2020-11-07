@@ -1,5 +1,5 @@
 function parseEmDash (text) {
-  const regex = /(^-|-$|\s-|-\s|(?:'|")-)/gm;
+  const regex = /(?<=^|\s|"|')-|-(?=$|\s|"|')/gm;
   const emDash = '\u2014';
 
   return text.replace(regex, emDash);
