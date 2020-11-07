@@ -29,3 +29,9 @@ For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces.
 ```
 yarn build --dist
 ```
+
+## Copyright
+
+The NRSV Bible translation follows the standard of "500 verses, not to exceed 20% of the printed work." Due to the copyright laws, this repository will remain private and for personal use only.
+
+For further insight, read ["The issue with copyright translations."](https://christianity.stackexchange.com/a/16386) on Stack Exchange.
