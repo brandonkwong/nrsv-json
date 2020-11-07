@@ -1,6 +1,6 @@
 # nrsv.xml
 
-The data used to build [nrsv.json](../dist/nrsv.json) originates from [dborza/bible-tools](https://github.com/dborza/bible-tools), which includes a set of "Tools for processing the sacred text," and several Bible translations in XML format. The `nrsv.xml` _here_ is a slightly modified version of [nrsv.xml](https://github.com/dborza/bible-tools/blob/master/bible-translations/nrsv.xml) from the repository of translations.
+The data used to build [nrsv.json](../dist/nrsv.json) originates from [dborza/bible-tools](https://github.com/dborza/bible-tools), which includes a set of "Tools for processing the sacred text," and several Bible translations in XML format. The `nrsv.xml` _here_ is a slightly modified version of [nrsv.xml](https://github.com/dborza/bible-tools/blob/master/bible-translations/nrsv.xml) from the original repository of translations.
 
 ## Em Dash
 
@@ -14,7 +14,7 @@ Within the verses of `nrsv.xml`, there contains various syntactic representation
 
 ### Util for parseEmDash()
 
-When building the JSON data structure, each verse has its text parsed for em dashes ([parseEmDash()](../utils/string.js#L1-L6)). The regex pattern, `(\s-|-\s)|(?<=^|"|')-|-(?=$|"|')`, matches the following patterns and replaces it with an em dash:
+When building the JSON data structure, each verse has its text parsed for em dashes (see: [parseEmDash()](../utils/string.js#L1-L6)). The regex, `(\s-|-\s)|(?<=^|"|')-|-(?=$|"|')`, matches the following patterns and replaces it with an em dash:
 
 - Hyphen with an adjacent empty space.
 - Hyphen at the beginning or end of text.
@@ -24,14 +24,14 @@ However, this still leaves a handful of hyphens (2,550 to be precise) after pars
 
 ### Compound Hyphens
 
-A compound hyphen can be found between two words or characters. There are three different ways a compound hyphen appears in the text:
+A compound hyphen can be found between two words or characters. There are three different ways a compound hyphen appears in the text. The first two occurrences remain as hyphens, while the third should be converted into an em dash:
 
 1. In the formation of a compound word, such as "well-being."
 2. Within a proper noun (i.e.: "Abel-mizraim").
 3. Between words or characters to represent an em dash.
 
-The first two occurrences remain as hyphens, while the third should be converted into an em dash. Various dictionary APIs were considered to assist in determining whether certain hyphens form an actual compound word. However, it would have been too cumbersome and costly. Thus, a little "self-mechanical turk" was required.
+Various dictionary APIs were considered to assist in determining whether certain hyphens are intended to form an actual compound word. However, initial research concluded that it would be too cumbersome and costly. Thus, a little "self-mechanical turk" was required.
 
 #### Self-Mechanical Turk
 
-After looking through the 2,373 results of compound hyphens, using the `\w-\w` regex pattern within Atom's `cmd + f`, 25% of the those were able to be parsed as em dashes by adding an adjacent space to the hyphen.
+After looking through the 2,373 results of compound hyphens (using the `\w-\w` regex pattern within Atom's ⌘F), 25% were subsequently parsed as em dashes by adding an adjacent space to the hyphen.
