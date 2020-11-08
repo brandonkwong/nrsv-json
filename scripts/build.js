@@ -38,7 +38,8 @@ async function build (options = {}) {
   try {
     const xml = await readFile(paths.xml);
     const json = await parseStringPromise(xml);
-    const data = map ? structureMap(json) : structureData(json);
+    const params = [json, { sample: dist }];
+    const data = map ? structureMap(...params) : structureData(...params);
     const file = JSON.stringify(data, null, space);
 
     await cleanBuild(paths.build, dist);
