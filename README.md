@@ -34,9 +34,9 @@ For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces; co
 yarn build --dist
 ```
 
-## Usage
+## Translation Usage
 
-The NRSV Bible translation follows the common translation gratis use policy:
+The NRSV Bible translation copyright information contains the following gratis use policy:
 
 >Up to 500 verses of the RSV or NRSV may be quoted in any form (written, visual, electronic or audio) without charge and without obtaining written permission ...
 >

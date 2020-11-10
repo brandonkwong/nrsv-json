@@ -11,7 +11,6 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
-    "dist": "node index.js --dist",
     "test": "semistandard"
   },
   "dependencies": {
