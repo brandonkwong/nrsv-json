@@ -6,5 +6,8 @@ yarn-error.log
 # Build
 build
 
+# Data
+data/*.xml
+
 # OSX
 .DS_Store
