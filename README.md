@@ -43,5 +43,3 @@ The NRSV Bible translation follows the common translation gratis use policy:
 >_— [New Revised Standard Version (NRSV) - Copyright Information - BibleGateway.com](https://www.biblegateway.com/versions/New-Revised-Standard-Version-NRSV-Bible/#copy)_
 
 For further insight on Bible translation copyrights, read ["The issue with copyright translations."](https://christianity.stackexchange.com/a/16386) on Stack Exchange.
-
-### Data
