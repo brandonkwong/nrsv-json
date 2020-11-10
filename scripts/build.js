@@ -2,8 +2,7 @@ const xml2js = require('xml2js');
 
 const path = require('path');
 
-const { structureData } = require('../lib/structure');
-const { structureMap } = require('../lib/structure-map');
+const { formatData, structureData, structureMap } = require('../lib/structure');
 const { makeDir, removeDir, readFile, writeFile } = require('../utils/file');
 
 const defaultOptions = {
@@ -31,20 +30,20 @@ async function cleanBuild (buildPath, dist) {
 async function build (options = {}) {
   const { indent, map, dist } = { ...defaultOptions, ...options };
   const dir = dist ? paths.dist : paths.build;
-  const jsonFile = map ? 'nrsv-map.json' : 'nrsv.json';
-  const jsonPath = `${dir}/${jsonFile}`;
+  const filename = map ? 'nrsv-map.json' : 'nrsv.json';
+  const filePath = `${dir}/${filename}`;
   const space = dist ? 0 : indent;
 
   try {
     const xml = await readFile(paths.xml);
     const json = await parseStringPromise(xml);
-    const params = [json, { sample: dist }];
-    const data = map ? structureMap(...params) : structureData(...params);
+    const jsonData = formatData(json, { sample: dist });
+    const data = map ? structureMap(jsonData) : structureData(jsonData);
     const file = JSON.stringify(data, null, space);
 
     await cleanBuild(paths.build, dist);
 
-    writeFile(jsonPath, file);
+    writeFile(filePath, file);
   } catch (error) {
     console.error(error);
   }
