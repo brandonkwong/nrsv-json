@@ -2,9 +2,13 @@
 
 📖 Delivering the NRSV Bible translation to JSON format.
 
+>The NRSV stands out among the many translations because it is "as literal as possible" in adhering to the ancient texts and only "as free as necessary" to make the meaning clear in graceful, understandable English. It draws on newly available sources that increase our understanding of many previously obscure biblical passages. These sources include new-found manuscripts, the Dead Sea Scrolls, other texts, inscriptions, and archaeological finds from the ancient Near East, and new understandings of Greek and Hebrew grammar.
+>
+>_— [New Revised Standard Version (NRSV) - Version Information - BibleGateway.com](https://www.biblegateway.com/versions/New-Revised-Standard-Version-NRSV-Bible/#vinfo)_
+
 ## Getting Started
 
-Download [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gosepl, in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
+Download a sample of [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gosepl, in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
 
 ```
 yarn build
@@ -24,14 +28,20 @@ Alternatively, [nrsv-map.json](dist/nrsv-map.json) may also be built for easier 
 yarn build --map
 ```
 
-For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces.
+For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces; containing a sample size of 499 verses, from the first chapter of each book.
 
 ```
 yarn build --dist
 ```
 
-## Copyright
+## Usage
 
-The NRSV Bible translation follows the standard of "500 verses, not to exceed 20% of the printed work." Due to the copyright laws, this repository will remain private and for personal use only.
+The NRSV Bible translation follows the common translation gratis use policy:
 
-For further insight, read ["The issue with copyright translations."](https://christianity.stackexchange.com/a/16386) on Stack Exchange.
+>Up to 500 verses of the RSV or NRSV may be quoted in any form (written, visual, electronic or audio) without charge and without obtaining written permission ...
+>
+>_— [New Revised Standard Version (NRSV) - Copyright Information - BibleGateway.com](https://www.biblegateway.com/versions/New-Revised-Standard-Version-NRSV-Bible/#copy)_
+
+For further insight on Bible translation copyrights, read ["The issue with copyright translations."](https://christianity.stackexchange.com/a/16386) on Stack Exchange.
+
+### Data

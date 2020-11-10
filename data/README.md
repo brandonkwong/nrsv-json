@@ -1,6 +1,6 @@
 # nrsv.xml
 
-The data used to build [nrsv.json](../dist/nrsv.json) originates from [dborza/bible-tools](https://github.com/dborza/bible-tools), which includes a set of "Tools for processing the sacred text," and several Bible translations in XML format. The `nrsv.xml` _here_ is a slightly modified version of [nrsv.xml](https://github.com/dborza/bible-tools/blob/master/bible-translations/nrsv.xml) from the original repository of translations.
+The data used to build [nrsv.json](../dist/nrsv.json) originates from [dborza/bible-tools](https://github.com/dborza/bible-tools), which includes a set of "Tools for processing the sacred text," and several Bible translations in XML format. The [`nrsv.xml`](https://github.com/brandonkwong/nrsv-xml) used and referenced within this repository, is a slightly modified version of [nrsv.xml](https://github.com/dborza/bible-tools/blob/master/bible-translations/nrsv.xml) from the original repository of translations. However, the `nrsv.xml` _here_ is a sampled version in order to adhere to translation copyright policies.
 
 ## Em Dash
 

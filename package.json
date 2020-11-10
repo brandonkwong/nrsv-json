@@ -1,7 +1,7 @@
 {
   "name": "nrsv-json",
   "version": "1.0.0",
-  "description": "Delivering the NRSV Bible translation to JSON.",
+  "description": "Delivering the NRSV Bible translation to JSON format.",
   "license": "MIT",
   "author": {
     "name": "Brandon Kwong",
@@ -20,6 +20,5 @@
   },
   "devDependencies": {
     "semistandard": "^16.0.0"
-  },
-  "private": true
+  }
 }

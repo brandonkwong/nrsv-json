@@ -28,7 +28,7 @@ async function cleanBuild (buildPath, dist) {
 }
 
 async function build (options = {}) {
-  const { indent, map, dist } = { ...defaultOptions, ...options };
+  const { indent, map, dist } = options;
   const dir = dist ? paths.dist : paths.build;
   const filename = map ? 'nrsv-map.json' : 'nrsv.json';
   const filePath = `${dir}/${filename}`;
@@ -36,10 +36,10 @@ async function build (options = {}) {
 
   try {
     const xml = await readFile(paths.xml);
-    const json = await parseStringPromise(xml);
-    const jsonData = formatData(json, { sample: dist });
-    const data = map ? structureMap(jsonData) : structureData(jsonData);
-    const file = JSON.stringify(data, null, space);
+    const xmlData = await parseStringPromise(xml);
+    const jsonData = formatData(xmlData);
+    const json = map ? structureMap(jsonData) : structureData(jsonData);
+    const file = JSON.stringify(json, null, space);
 
     await cleanBuild(paths.build, dist);
 
