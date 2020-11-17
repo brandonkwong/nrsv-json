@@ -34,7 +34,7 @@ For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces; co
 yarn build --dist
 ```
 
-For use with custom data sources, a `--dataPath` option can be used to build `nrsv.json` from any XML file.
+For use with custom [data sources](data), a `--dataPath` option can be used to build `nrsv.json` from any XML file.
 
 ```
 yarn build --dataPath data/custom.xml
