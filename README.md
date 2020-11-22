@@ -16,7 +16,7 @@ yarn build
 
 ### Build Options
 
-An `--indent` option can be used to adjust spacing (default is `4`) for desired level of readability. This is particularly useful while editing the JSON [structure](lib/structure.js).
+An `--indent` option may be used to adjust spacing (default is `4`) for desired level of readability. This is particularly useful while editing the JSON [structure](lib/structure.js).
 
 ```
 yarn build --indent 2
@@ -34,7 +34,7 @@ For distribution, [nrsv.json](dist/nrsv.json) is stringified with `0` spaces; co
 yarn build --dist
 ```
 
-For use with custom [data sources](data), a `--dataPath` option can be used to build `nrsv.json` from any XML file.
+For use with custom [data sources](data), a `--dataPath` option may be used to build `nrsv.json` from any XML file.
 
 ```
 yarn build --dataPath data/custom.xml
