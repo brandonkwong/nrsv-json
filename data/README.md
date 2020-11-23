@@ -14,7 +14,7 @@ Within the verses of `nrsv.xml`, there contains various syntactic representation
 
 ### Util for parseEmDash()
 
-When building the JSON data structure, each verse has its text parsed for em dashes (see: [parseEmDash()](../utils/string.js#L1-L6)). The regex, `(\s-|-\s)|(?<=^|"|')-|-(?=$|"|')`, matches the following patterns and replaces it with an em dash:
+When building the JSON data structure, each verse has its text parsed for em dashes (see: [parseEmDash()](../utils/string.js#L1-L6)). The regex, `-\s|\s-|(?<=^|["'])-|-(?=$|["'])`, matches the following patterns and replaces it with an em dash:
 
 - Hyphen with an adjacent empty space.
 - Hyphen at the beginning or end of text.
