@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-Download a sample of [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gosepl, in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
+Download a sample of [nrsv.json](dist/nrsv.json) or fork this project to get started on sharing the gospel, in a lightweight data-interchange format. Just `yarn install` and run the following to build locally:
 
 ```
 yarn build
