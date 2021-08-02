@@ -9,6 +9,11 @@ function sanitizeText (text) {
   return parseEmDash(text);
 }
 
+function slugify (string) {
+  return string.replace(' ', '-').toLowerCase();
+}
+
 module.exports = {
-  sanitizeText
+  sanitizeText,
+  slugify
 };
