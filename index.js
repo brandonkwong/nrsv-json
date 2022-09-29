@@ -6,7 +6,7 @@ const { build, defaultOptions } = require('./scripts/build');
 const { argv } = yargs(hideBin(process.argv));
 
 const options = {
-  indent: argv.indent === undefined ? defaultOptions.indent : argv.index,
+  indent: argv.indent === undefined ? defaultOptions.indent : argv.indent,
   map: argv.map || defaultOptions.map,
   sanity: argv.sanity || defaultOptions.sanity,
   ndjson: argv.ndjson || defaultOptions.ndjson,
